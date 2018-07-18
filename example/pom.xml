@@ -158,6 +158,13 @@
 	</build>
 
 	<dependencies>
+		<!-- This dependency contains CVE-2015-6420, but is ignored, because  whole module is not referenced in war. -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+            <scope>test</scope>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
